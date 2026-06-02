@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pointcloud-noise-simulator"
+version = "0.1.0"
+description = "Physics-aware and Gaussian noise generation for point-cloud datasets."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+  { name = "PAUM contributors" }
+]
+dependencies = [
+  "numpy>=1.24",
+  "open3d>=0.18"
+]
+
+[project.optional-dependencies]
+viz = ["matplotlib>=3.7"]
+dev = ["pytest>=8"]
+
+[project.scripts]
+pointcloud-noise = "pointcloud_noise.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
