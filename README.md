@@ -8,8 +8,6 @@ Physics-aware and Gaussian noise generation for point-cloud datasets.
 
 This repository provides a compact data-preparation toolkit for corrupting clean point clouds with controllable measurement noise. It is designed for dataset augmentation, robustness evaluation, and simulation-to-real transfer studies where sensor uncertainty should be represented before downstream model training.
 
-![Measurement uncertainty pipeline](assets/figures/measurement_uncertainty_pipeline.png)
-
 ## Features
 
 - Physics-aware point-cloud corruption with range, incidence-angle, reflectivity, motion-drift, and environment-noise terms.
